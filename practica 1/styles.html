@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitio Web Profesional</title>
+<link rel="stylesheet" href="styles.css">
+<script src="styles.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Sitio Web Profesional</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="section">
+    <div class="container">
+      <h2>Bienvenido a nuestro sitio web</h2>
+      <p>¡Hola! Gracias por visitar nuestro sitio web profesional. Aquí encontrarás información sobre nuestros servicios y proyectos.</p>
+      <p>Si estás interesado en ver el código fuente de este sitio web, ¡no dudes en echar un vistazo al archivo en GitHub!</p>
+      <a href="https://github.com/tuusuario/tusitio" class="btn">Ver Código Fuente en GitHub</a>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="/img/descarga (1).jfif" alt="Imagen 1">
+        <img src="/img/descarga (1).jfif" alt="Imagen 2">
+        <img src="/img/descarga (1).jfif" alt="Imagen 3">
+        <!-- Agrega más imágenes según sea necesario -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+      <div id="responseMessage" class="response-message"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Sitio Web Profesional. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
